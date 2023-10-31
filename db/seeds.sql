@@ -31,5 +31,5 @@ ADD VALUES ("John", "Doe", 1, NULL),
            ("Tom", "Brown", 7, 8),
            ("Jerry", "Cobb", 7, 8)
            ("Jack", "Davis", 8, NULL),
-           ("Jill", "Miller", 9, 8),
-           ("Sam", "Wilson", 10, 8);
+           ("Jill", "Miller", 9, NULL),
+           ("Sam", "Wilson", 10, 12);
