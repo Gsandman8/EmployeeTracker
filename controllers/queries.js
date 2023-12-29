@@ -12,7 +12,7 @@ class Calls{
     }
 
     getEmployeesData(){
-        return "SELECT * FROM employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department_id = department.id";
+        return "SELECT employee.id AS employeeId, employee.*, role.*, department.* FROM employee JOIN role ON employee.role_id = role.id JOIN department ON role.department_id = department.id";
     }
 
     getEmployees(){
