@@ -4,7 +4,7 @@ class Calls{
     }
 
     getRolesData(){
-        return "SELECT * FROM role LEFT JOIN department ON role.department_id = department.id";
+        return "SELECT role.id AS roleId, role.*, department.* FROM role LEFT JOIN department ON role.department_id = department.id";
     }
 
     getRoles(){
