@@ -3,12 +3,20 @@ class Calls{
         return "SELECT * FROM department";
     }
 
-    getRoles(){
+    getRolesData(){
         return "SELECT * FROM role LEFT JOIN department ON role.department_id = department.id";
     }
 
-    getEmployees(){
+    getRoles(){
+        return "SELECT * FROM role";
+    }
+
+    getEmployeesData(){
         return "SELECT * FROM employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department_id = department.id";
+    }
+
+    getEmployees(){
+        return "SELECT * FROM employee";
     }
 
     getManagers(){
