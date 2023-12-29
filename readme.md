@@ -7,6 +7,7 @@ This simple CLI application utilizes the inquirer and mysql2 node packages to cr
 This application can be invoked using "node index" while inside whichever folder contains said index.js file. Then simply answer the questions the command line will prompt you with in accordance with your desires.
 
 ## Video
-
+https://drive.google.com/file/d/1JP9Jn2QnMHwbCZwth8dAlnVJh90JMtqv/view
 
 ## Github Repository
+https://github.com/Gsandman8/EmployeeTracker
