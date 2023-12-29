@@ -195,9 +195,9 @@ async function main(){
         } else if(res.mainMenu === 'Add an Employee'){
             inquirer.prompt(addEmployee).then((res) => {
                 const roleId = roles.find(role => role.title === res.role).id;
-                if(res.manager === "No manager"){
+                if(res.manager === "No Manager"){
                     const manager_id = null; 
-                    con.execute(Query.addEmployee(res.firstName, res.lastName, roleId));
+                    con.execute(Query.addEmployee(res.firstName, res.lastName, roleId, manager_id));
                 } else {const managerId = managers.find(manager => `${manager.first_name} ${manager.last_name}` === res.manager).id;
                 con.execute(Query.addEmployee(res.firstName, res.lastName, roleId, managerId));
                 }
